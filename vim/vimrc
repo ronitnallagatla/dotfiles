@@ -1,0 +1,62 @@
+" Environment
+let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+
+set nocompatible " not vi compatible
+
+" Syntax and indent
+syntax on
+set showmatch
+
+filetype plugin indent on " enable file type detection
+set autoindent
+
+"Basic editing config
+set nu " number lines
+set rnu " relative line numbers
+set incsearch " incremental search (as string is being typed)
+set hls " highlight search
+set lbr " line break
+set scrolloff=5
+set backspace=indent,eol,start " allow backspacing over everything
+set timeout timeoutlen=1000 ttimeoutlen=100 " fix slow O inserts
+set lazyredraw " skip redrawing screen in some cases
+set autochdir " automatically set current dir to dir of last opened file
+set hidden " allow auto-hiding of edited buffers
+set history=8192 " more history
+set nojoinspaces " suppress inserting two spaces between sentences
+" use 4 spaces instead of tabs during formatting
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+" smart case-sensitive search
+set ignorecase
+set smartcase
+" tab completion for files/buffers
+set wildmode=longest,list
+set wildmenu
+set mouse+=a " enable mouse mode
+set nofoldenable " disable folding by default
+
+" Misc config
+
+" unbind keys
+map <C-a> <Nop>
+map <C-x> <Nop>
+nmap Q <Nop>
+
+" disable audible bell
+set noerrorbells visualbell t_vb=
+
+" open new split panes to right and bottom
+set splitbelow
+set splitright
+
+" quicker window movement
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" save read-only files
+command -nargs=0 Sudow w !sudo tee % >/dev/null
