@@ -1,6 +1,6 @@
 # grep colors
 alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
+alias egrep='grep -E --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # ls 
@@ -15,5 +15,5 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # SSH
-alias eceprog='ssh rnallaga@eceprog.ecn.purdue.edu'
-alias mg='ssh mg125@ececomp.ecn.purdue.edu'
+alias eceprog='kitty +kitten ssh rnallaga@eceprog.ecn.purdue.edu'
+alias mg='kitty +kitten ssh mg125@ececomp.ecn.purdue.edu'
