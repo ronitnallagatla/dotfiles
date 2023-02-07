@@ -10,7 +10,7 @@ return {
  \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/
                                                  
                                                  
-            [ @ronitnallagatla ]
+              [ @ronitnallagatla ]
     ]]
     opts.section.header.val = vim.split(logo, "\n", { triempty = true})
   end,
