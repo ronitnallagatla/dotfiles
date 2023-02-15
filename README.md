@@ -3,8 +3,8 @@ Decided to get a basic Arch Linux setup going. I'm running it on a removable ext
 
 ## TODO
 - Get nvidia optimus working, battery life is abysmal rn
-- Configure trackpad gestures for i3 navigation, or just get on hyprland
-- Figure out how to make some apps not tile by default
+- Configure trackpad gestures for i3 navigation, or just get on hyprland -- DONE
+- Figure out how to make some apps not tile by default -- DONE
 
 ## Fetch
 ![neofetch screenshot](./fetch.png)
