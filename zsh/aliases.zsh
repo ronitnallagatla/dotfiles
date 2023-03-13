@@ -26,6 +26,7 @@ alias cat="bat --color always --plain"
 alias g="lazygit"
 alias yay="paru"
 alias c="clear"
+alias q="exit"
 
 
 if [[ $TERM == "xterm-kitty" ]]; then
