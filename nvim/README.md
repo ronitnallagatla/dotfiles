@@ -1,3 +1,3 @@
 # 💤 Neovim
 
-![screenshot](./screenshot1.png)
+![screenshot](./screenshot.png)
