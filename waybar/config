@@ -6,6 +6,7 @@
     // "modules-left": ["custom/launcher", "wlr/workspaces"],
     "modules-left": ["custom/launcher", "wlr/workspaces"],
     /* "modules-center": ["custom/spotify"], */
+    "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "backlight", "battery", "clock"],
     "wlr/workspaces": {
       "format": "{icon}",

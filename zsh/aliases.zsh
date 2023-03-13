@@ -35,5 +35,5 @@ fi
 
 # SSH
 alias eceprog="ssh rnallaga@eceprog.ecn.purdue.edu"
-alias mg="ssh mg253@ececomp.ecn.purdue.edu"
+alias mg="ssh mg252@ececomp.ecn.purdue.edu"
 
