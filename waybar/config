@@ -6,7 +6,7 @@
     // "modules-left": ["custom/launcher", "wlr/workspaces"],
     "modules-left": ["custom/launcher", "wlr/workspaces"],
     /* "modules-center": ["custom/spotify"], */
-    "modules-right": ["tray", "pulseaudio", "network", "clock"],
+    "modules-right": ["tray", "pulseaudio", "network", "backlight", "battery", "clock"],
     "wlr/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -58,7 +58,7 @@
         // "format-ethernet": " wired",
         "format-ethernet": "",
         "format-disconnected": "睊",
-        "on-click": "network-connection-manager",
+        "on-click": "nm-connection-editor",
         // "format-wifi": "{essid} ({signalStrength}%) ",
         // "format-ethernet": "{ipaddr}/{cidr} ",
         // "tooltip-format": "{ifname} via {gwaddr} ",
