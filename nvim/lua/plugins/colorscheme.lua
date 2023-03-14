@@ -7,11 +7,18 @@ return {
     name = "catppuccin",
   },
 
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = { style = "moon" },
+  },
+
   -- Configure LazyVim to load catpuccin
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      -- colorscheme = "catppuccin-mocha",
+      colorscheme = "tokyonight",
     },
-  }
+  },
 }
