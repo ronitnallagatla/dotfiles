@@ -14,6 +14,11 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 
+# human readable sizes
+alias df="df -h"
+alias du="du -h"
+alias free="free -h"
+
 # pacman fzf
 alias pacfz="pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk \"{print \$2}\")' | xargs -ro sudo pacman -S"
 alias parufz="paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk \"{print \$2}\")' | xargs -ro  paru -S"
@@ -22,11 +27,14 @@ alias cleanpac='sudo pacman -Rns $(pacman -Qtdq); paru -c'
 
 # misc
 alias zip="zip -r"
-alias cat="bat --color always --plain"
+alias cat="bat --color=always"
 alias g="lazygit"
 alias yay="paru"
 alias c="clear"
 alias q="exit"
+alias catfz="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+alias batfz="catfz"
+eval $(thefuck --alias)
 
 
 if [[ $TERM == "xterm-kitty" ]]; then
