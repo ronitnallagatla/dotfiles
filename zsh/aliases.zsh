@@ -26,6 +26,9 @@ alias pacrem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro su
 alias cleanpac='sudo pacman -Rns $(pacman -Qtdq); paru -c'
 
 # misc
+alias vim="nvim"
+alias v="nvim"
+alias nv="nvim"
 alias zip="zip -r"
 alias cat="bat --color=always"
 alias g="lazygit"
@@ -44,4 +47,5 @@ fi
 # SSH
 alias eceprog="ssh rnallaga@eceprog.ecn.purdue.edu"
 alias mg="ssh mg252@ececomp.ecn.purdue.edu"
+alias mgfs="sshfs mg252@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg252/ ~/MG && cd ~/MG"
 

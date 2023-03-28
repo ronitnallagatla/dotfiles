@@ -20,7 +20,7 @@ return {
     },
   },
 
-  -- Configure LazyVim to load catpuccin
+  -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
     opts = {

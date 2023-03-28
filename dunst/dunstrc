@@ -1,9 +1,10 @@
 [global]
 follow = mouse
-width = (100, 350)
+width = (100, 300)
 height = 150
 origin = top-right
-offset = "30x50"
+# offset = "30x50"
+offset = "20x20"
 notification_limit = 4
 shrink = yes
 transparency = 0
