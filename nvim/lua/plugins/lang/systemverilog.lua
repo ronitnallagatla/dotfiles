@@ -10,9 +10,27 @@ return {
     end,
   },
 
+  -- setup mason lsp
+  {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, { "svls" })
+    end,
+  },
+
   -- correctly setup lspconfig
   {
     "neovim/nvim-lspconfig",
     dependancies = { "dalance/svls" },
+    setup = {
+      function()
+        local lspconfig = require("lspconfig")
+        lspconfig.svls.setup({
+          cmd = { "svls" },
+          filetypes = { "systemverilog", "verilog" },
+          root_dir = lspconfig.util.root_pattern("Makefile", ".git", ".svls.toml"),
+        })
+      end,
+    },
   },
 }

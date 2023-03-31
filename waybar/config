@@ -53,11 +53,14 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
 
-        "format-wifi": "直 {signalStrength}%",
+        //"format-wifi": "直 {signalStrength}%",
+        "format-wifi": "{icon} {signalStrength}%",
+        "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
         // "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
         // "format-ethernet": " {ifname}",
         // "format-ethernet": " wired",
-        "format-ethernet": "",
+        //"format-ethernet": "",
+        "format-ethernet": "  ",
         "format-disconnected": "睊",
         "on-click": "nm-connection-editor",
         // "format-wifi": "{essid} ({signalStrength}%) ",
@@ -78,9 +81,10 @@
         // "format-source": "{volume}% ",
         // "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
+            //"headphone": "",
+            "headphone": "󰋋",
             "hands-free": "",
-            "headset": "",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
