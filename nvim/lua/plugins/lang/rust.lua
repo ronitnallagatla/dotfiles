@@ -66,6 +66,7 @@ return {
               hover_actions = {
                 auto_focus = false,
                 -- border = "none",
+                border = "rounded",
               },
               inlay_hints = {
                 auto = true,

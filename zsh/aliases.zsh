@@ -39,13 +39,12 @@ alias catfz="fzf --preview 'bat --color=always --style=numbers --line-range=:500
 alias batfz="catfz"
 eval $(thefuck --alias)
 
-
+# SSH
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi
 
-# SSH
 alias eceprog="ssh rnallaga@eceprog.ecn.purdue.edu"
 alias mg="ssh mg252@ececomp.ecn.purdue.edu"
 alias mgfs="sshfs mg252@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg252/ ~/MG && cd ~/MG"
-
+alias mgfss="sshfs mg252@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg252/ ~/MG -o compression=no,auto_cache,reconnect,follow_symlinks"
