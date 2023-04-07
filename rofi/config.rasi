@@ -8,8 +8,10 @@ kb-remove-to-eol: "";
 kb-accept-entry: "Control+m,Return,KP_Enter";
 kb-row-up: "Up,Control+p,Control+k";
 kb-row-down: "Down,Control+n,Control+j";
+matching: "fuzzy";
 me-select-entry: "MouseDPrimary";
 me-accept-entry: "MousePrimary";
+sorting-method: "fzf";
   timeout {
       action: "kb-cancel";
       // delay: 10;
