@@ -29,6 +29,7 @@ alias cleanpac='sudo pacman -Rns $(pacman -Qtdq); paru -c'
 alias vim="nvim"
 alias v="nvim"
 alias nv="nvim"
+alias code="codium"
 alias zip="zip -r"
 alias cat="bat --color=always"
 alias g="lazygit"

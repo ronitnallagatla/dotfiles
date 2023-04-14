@@ -1,5 +1,6 @@
 {
   // NOTE: Icons: https://github.com/Alexays/Waybar/issues/350
+    "layer": "top",
     "height": 25, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
     // "modules-left": ["custom/launcher", "wlr/workspaces", "hyprland/window"],
@@ -11,6 +12,8 @@
     "wlr/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
       /* "format-icons": { */
       /*   "1": "", */
       /*   "2": "", */
@@ -46,8 +49,13 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+          },
         "device": "BAT0",
         "format": "{capacity}% {icon}",
+        "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
@@ -60,7 +68,6 @@
         // "format-ethernet": " {ifname}",
         // "format-ethernet": " wired",
         "format-ethernet": "",
-        //"format-ethernet": "  ",
         "format-disconnected": "睊",
         "on-click": "nm-connection-editor",
         // "format-wifi": "{essid} ({signalStrength}%) ",
@@ -73,10 +80,10 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         // "format": "{volume}% {icon} {format_source}",
-        // "format": "{volume}% {icon}",
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon} {volume}% {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        //"format-bluetooth": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": "󰖁 {icon} {volume}%",
         "format-muted": "婢",
         // "format-source": "{volume}% ",
         // "format-source-muted": "",
@@ -92,6 +99,24 @@
         },
         "on-click": "pavucontrol"
     },
+    /*
+    "custom/cava": {
+        "format": "{icon}{}",
+        "format-icons": {
+            "Playing": " ", // Uncomment if not using caway
+            "Paused": " ",
+            "Stopped": "&#x202d;ﭥ " // This stop symbol is RTL. So &#x202d; is left-to-right override.
+        },
+        "escape": true,
+        "tooltip": true,
+        "exec": "~/.config/waybar/scripts/cavay.sh",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl previous",
+        "on-scroll-down": "playerctl next",
+        "max-length": 35
+    },
+    */
     "custom/launcher": {
         // "exec": "$HOME/.config/waybar/scripts/spotify.sh",
         // "return-type": "json",
@@ -114,5 +139,3 @@
         "on-right-click": "on-click-right"
     },
 }
-
-

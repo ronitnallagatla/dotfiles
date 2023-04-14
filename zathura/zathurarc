@@ -27,45 +27,127 @@ set scroll-step 100
 set zoom-min 10
 set guioptions ""
 
-set font "Liga SFMono Nerd Font 11"
+set font "monospace 11"
 
 set selection-clipboard clipboard
 
+# tokyonight
+set default-fg                  "#a9b1d6"
+set default-bg                  "#1a1b26"
+
+set index-fg                    "#c0caf5"
+set index-bg                    "#24283b"
+set index-active-fg             "#414868"
+set index-active-bg             "#24283b"
+
+set statusbar-fg                "#a9b1d6"
+set statusbar-bg                "#24283b"
+
+set inputbar-fg                 "#73daca"
+set inputbar-bg                 "#1a1b26"
+
+set notification-fg             "#a9b1d6"
+set notification-bg             "#24283b"
+
+set notification-error-fg       "#f7768e"
+set notification-error-bg       "#24283b"
+
+set notification-warning-fg     "#24283b"
+set notification-warning-bg     "#1a1b26"
+
+set highlight-color             "#e0af68"
+set highlight-active-color      "#9aa5ce"
+
+set completion-fg               "#a9b1d6"
+set completion-bg               "#24283b"
+
+set completion-highlight-fg     "#a9b1d6"
+set completion-highlight-bg     "#414868"
+set completion-group-fg         "#7aa2f7"
+set completion-group-bg         "#24283b"
+
+set recolor-lightcolor          "#16161e"
+set recolor-darkcolor           "#a9b1d6"
+
+set recolor                     "true"
+set recolor-keephue             "false"
+
+# set default-fg 			"#c0caf5"
+# set default-bg 			"#24283b"
+#
+# set completion-bg		"#24283b"
+# set completion-fg		"#c0caf5"
+# set completion-highlight-bg	"#414868"
+# set completion-highlight-fg	"#c0caf5"
+# set completion-group-bg		"#24283b"
+# set completion-group-fg		"#7aa2f7"
+#
+# set statusbar-fg		"#a9b1d6"
+# set statusbar-bg		"#414868"
+# set statusbar-h-padding		10
+# set statusbar-v-padding		10
+#
+# set notification-bg		"#414868"
+# set notification-fg		"#a9b1d6"
+# set notification-error-bg	"#f7768e"
+# set notification-error-fg	"#24283b"
+# set notification-warning-bg	"#e0af68"
+# set notification-warning-fg	"#24283b"
+# set selection-notification	"true"
+#
+# set inputbar-fg			"#c0caf5"
+# set inputbar-bg 		"#24283b"
+#
+# set recolor			"true"
+# set recolor-lightcolor		"#24283b"
+# set recolor-darkcolor		"#c0caf5"
+#
+# set index-fg			"#c0caf5"
+# set index-bg			"#24283b"
+# set index-active-fg		"#c0caf5"
+# set index-active-bg		"#414868"
+#
+# set render-loading-bg		"#24283b"
+# set render-loading-fg		"#c0caf5"
+#
+# set highlight-color		"#7aa2f7"
+# set highlight-active-color	"#bb9af7"
+
 # zathurarc-dark
-set notification-error-bg       "#586e75" # base01  # seem not work
-set notification-error-fg       "#dc322f" # red
-set notification-warning-bg     "#586e75" # base01
-set notification-warning-fg     "#dc322f" # red
-set notification-bg             "#586e75" # base01
-set notification-fg             "#b58900" # yellow
+# set notification-error-bg       "#586e75" # base01  # seem not work
+# set notification-error-fg       "#dc322f" # red
+# set notification-warning-bg     "#586e75" # base01
+# set notification-warning-fg     "#dc322f" # red
+# set notification-bg             "#586e75" # base01
+# set notification-fg             "#b58900" # yellow
 
-set completion-group-bg         "#002b36" # base03
-set completion-group-fg         "#839496" # base0
-set completion-bg               "#073642" # base02
-set completion-fg               "#93a1a1" # base1
-set completion-highlight-bg     "#586e75" # base01
-set completion-highlight-fg     "#eee8d5" # base2
+# set completion-group-bg         "#002b36" # base03
+# set completion-group-fg         "#839496" # base0
+# set completion-bg               "#073642" # base02
+# set completion-fg               "#93a1a1" # base1
+# set completion-highlight-bg     "#586e75" # base01
+# set completion-highlight-fg     "#eee8d5" # base2
 
-# Define the color in index mode
-set index-bg                   "#073642" # base02
-set index-fg                   "#93a1a1" # base1
-set index-active-bg             "#586e75" # base01
-set index-active-fg             "#eee8d5" # base2
-
-set inputbar-bg                 "#586e75" # base01
-set inputbar-fg                 "#eee8d5" # base2
-
-set statusbar-bg                "#073642" # base02
-set statusbar-fg                "#93a1a1" # base1
-
-set highlight-color             "#657b83" # base00  # hightlight match when search keyword(vim's /)
-set highlight-active-color      "#268bd2" # blue
-
-set default-bg                  "#073642" # base02
-set default-fg                  "#93a1a1" # base1
-set render-loading              true
-set render-loading-fg           "#073642" # base02
-set render-loading-bg           "#073642" # base02
+# # Define the color in index mode
+# set index-bg                   "#073642" # base02
+# set index-fg                   "#93a1a1" # base1
+# set index-active-bg             "#586e75" # base01
+# set index-active-fg             "#eee8d5" # base2
+#
+# set inputbar-bg                 "#586e75" # base01
+# set inputbar-fg                 "#eee8d5" # base2
+#
+# set statusbar-bg                "#073642" # base02
+# set statusbar-fg                "#93a1a1" # base1
+#
+# set highlight-color             "#657b83" # base00  # hightlight match when search keyword(vim's /)
+# set highlight-active-color      "#268bd2" # blue
+#
+# set default-bg                  "#073642" # base02
+# set default-fg                  "#93a1a1" # base1
+# set render-loading              true
+# set render-loading-fg           "#073642" # base02
+# set render-loading-bg           "#073642" # base02
 
 # Recolor book content's color
 # set recolor                     true
