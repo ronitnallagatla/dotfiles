@@ -10,6 +10,19 @@ return {
     end,
   },
 
+  {
+    "nvim-treesitter/nvim-treesitter",
+    dependencies = { { "JoosepAlviste/nvim-ts-context-commentstring", lazy = true } },
+    opts = {
+      context_commentstring = {
+        enable = true,
+        config = {
+          verilog = "// %s",
+        },
+      },
+    },
+  },
+
   -- setup mason lsp
   {
     "williamboman/mason.nvim",

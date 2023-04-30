@@ -38,6 +38,8 @@ alias c="clear"
 alias q="exit"
 alias catfz="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 alias batfz="catfz"
+alias z="zathura"
+alias open="xdg-open"
 eval $(thefuck --alias)
 
 # SSH
