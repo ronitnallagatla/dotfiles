@@ -1,6 +1,7 @@
 daemonize
 show-failed-attempts
 clock
+font-size=60
 effect-blur=5x5
 color=1f1d2e80
 indicator
@@ -29,7 +30,7 @@ bs-hl-color=31748f
 grace=2
 grace-no-mouse
 grace-no-touch
-timestr=%H:%M %p
+timestr=%r
 datestr=%a %b %d
 fade-in="0.1"
 ignore-empty-password
