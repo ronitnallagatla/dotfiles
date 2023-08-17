@@ -13,12 +13,12 @@ return {
   },
 
   -- which key extensions
-  {
-    "folke/which-key.nvim",
-    opts = function()
-      require("which-key").register({
-        ["<leader>d"] = { name = "+debug", mode = { "n", "v" } },
-      })
-    end,
-  },
+  -- {
+  --   "folke/which-key.nvim",
+  --   opts = function()
+  --     require("which-key").register({
+  --       ["<leader>d"] = { name = "+debug", mode = { "n", "v" } },
+  --     })
+  --   end,
+  -- },
 }
