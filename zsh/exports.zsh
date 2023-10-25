@@ -22,3 +22,5 @@ export FZF_DEFAULT_OPTS="
   --layout=reverse
   --border horizontal
   --height 40"
+
+export SVLINT_CONFIG=$XDG_CONFIG_HOME/svlint/svlint.toml
