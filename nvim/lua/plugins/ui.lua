@@ -91,6 +91,7 @@ return {
       return opts
     end,
   },
+
   -- notify customization
   {
     "rcarriga/nvim-notify",
