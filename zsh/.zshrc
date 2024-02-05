@@ -19,5 +19,6 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 # keybinds
 bindkey '^ ' autosuggest-accept
+bindkey '^f' autosuggest-accept
 
 export PATH="$HOME/.local/bin":$PATH

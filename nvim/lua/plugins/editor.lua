@@ -24,4 +24,16 @@ return {
   --     })
   --   end,
   -- },
+  --
+  -- Copilot which key extension
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>a"] = { name = "+ai" },
+      },
+    },
+  },
+  vim.keymap.set("n", "<leader>ae", "<cmd>Copilot enable<cr>", { desc = "Enable Copilot" }),
+  vim.keymap.set("n", "<leader>ad", "<cmd>Copilot disable<cr>", { desc = "Disable Copilot" }),
 }

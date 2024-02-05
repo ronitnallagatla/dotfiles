@@ -49,7 +49,7 @@ fi
 
 alias eceprog="ssh rnallaga@eceprog.ecn.purdue.edu"
 alias ecnfs="sshfs -o auto_cache,cache=yes,kernel_cache,reconnect,compression=no rnallaga@eceprog.ecn.purdue.edu:/home/shay/a/rnallaga ~/ecnfs && cd  ~/ecnfs"
-alias mg="ssh mg393@ececomp.ecn.purdue.edu"
+alias mg="ssh mg293@ececomp.ecn.purdue.edu"
 # alias mgfs="sshfs mg252@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg252/ ~/MG && cd ~/MG"
 alias mgfs="sshfs mg393@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg393/ ~/MG -o compression=no,auto_cache,reconnect,follow_symlinks"
 alias socet="ssh socet167@ececomp.ecn.purdue.edu"

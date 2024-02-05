@@ -1,4 +1,5 @@
 daemonize
+screenshots
 show-failed-attempts
 clock
 font-size=60
@@ -32,5 +33,5 @@ grace-no-mouse
 grace-no-touch
 timestr=%r
 datestr=%a %b %d
-fade-in="0.1"
+fade-in="0.5"
 ignore-empty-password
