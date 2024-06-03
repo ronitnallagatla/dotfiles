@@ -1,7 +1,7 @@
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-export GTK_THEME=WhiteSur-dark
+export GTK_THEME=WhiteSur-Dark
 export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
@@ -23,4 +23,11 @@ export FZF_DEFAULT_OPTS="
   --border horizontal
   --height 40"
 
-export SVLINT_CONFIG=$XDG_CONFIG_HOME/svlint/svlint.toml
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+--color=fg:#c0caf5,bg:#1a1b26,hl:#ff9e64 \
+--color=fg+:#c0caf5,bg+:#292e42,hl+:#ff9e64 \
+--color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff \
+--color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
+
+# export SVLINT_CONFIG=$XDG_CONFIG_HOME/svlint/svlint.toml
+# export SVLINT_CONFIG=$XDG_CONFIG_HOME/svlint/demo.toml

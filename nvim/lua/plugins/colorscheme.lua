@@ -20,12 +20,18 @@ return {
     },
   },
 
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = true,
+  },
+
   -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "catppuccin-mocha",
       colorscheme = "tokyonight",
+      -- colorscheme = "kanagawa",
     },
   },
 }

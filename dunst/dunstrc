@@ -7,17 +7,17 @@ origin = top-right
 offset = "20x20"
 notification_limit = 4
 shrink = yes
-transparency = 0
+transparency = 1
 
 padding = 12
 horizontal_padding = 12
 
 frame_width = 4
-frame_color = "#0f0f0f"
+# frame_color = "#0f0f0f"
 
 corner_radius = 0
 
-separator_color = "#4c4c4c"
+# separator_color = "#4c4c4c"
 
 progress_bar_height = 5
 progress_bar_min_width = 0
@@ -27,8 +27,8 @@ progress_bar_frame_width = 0
 font = "SF Pro Text 10"
 icon_theme = WhiteSur-dark
 
-format = "<span size='x-large' font_desc='SF Pro Text 9' weight='Bold' foreground='#c49ec4'>%s</span>\n%b"
-
+#format = "<span size='x-large' font_desc='SF Pro Text 9' weight='Bold' foreground='#c49ec4'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='SF Pro Text 9' weight='Bold' foreground='#c0caf5'>%s</span>\n%b"
 alignment = center
 markup = full
 always_run_script = true
@@ -51,20 +51,41 @@ mouse_left_click = do_action, close_current
 mouse_middle_click = close_all
 mouse_right_click = close_current
 
+# TokyoNight colors for dunst
+# For more configuraion options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
 [urgency_low]
-timeout = 5
-background = "#0f0f0f"
-foreground = "#e7e7e7"
-highlight = "#c49ec4"
+    timeout = 5
+    background = "#16161e"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
 
 [urgency_normal]
-timeout = 10
-background = "#0f0f0f"
-foreground = "#e7e7e7"
-highlight = "#c49ec4"
+    timeout = 10
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
 
 [urgency_critical]
-timeout = 0
-background = "#0f0f0f"
-foreground = "#e7e7e7"
-highlight = "#c49ec4"
+    timeout = 10
+    background = "#292e42"
+    foreground = "#db4b4b"
+    frame_color = "#db4b4b"
+
+# [urgency_low]
+# timeout = 5
+# background = "#0f0f0f"
+# foreground = "#e7e7e7"
+# highlight = "#c49ec4"
+# 
+# [urgency_normal]
+# timeout = 10
+# background = "#0f0f0f"
+# foreground = "#e7e7e7"
+# highlight = "#c49ec4"
+# 
+# [urgency_critical]
+# timeout = 0
+# background = "#0f0f0f"
+# foreground = "#e7e7e7"
+# highlight = "#c49ec4"

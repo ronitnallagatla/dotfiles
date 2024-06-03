@@ -31,46 +31,85 @@ set font "monospace 11"
 
 set selection-clipboard clipboard
 
-# tokyonight
-set default-fg                  "#a9b1d6"
-set default-bg                  "#1a1b26"
+# Tokyonight color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# Tokyonight color theme
+#
+set notification-error-bg "#f7768e"
+set notification-error-fg "#c0caf5"
+set notification-warning-bg "#e0af68"
+set notification-warning-fg "#414868"
+set notification-bg "#1a1b26"
+set notification-fg "#c0caf5"
+set completion-bg "#1a1b26"
+set completion-fg "#a9b1d6"
+set completion-group-bg "#1a1b26"
+set completion-group-fg "#a9b1d6"
+set completion-highlight-bg "#414868"
+set completion-highlight-fg "#c0caf5"
+set index-bg "#1a1b26"
+set index-fg "#c0caf5"
+set index-active-bg "#414868"
+set index-active-fg "#c0caf5"
+set inputbar-bg "#1a1b26"
+set inputbar-fg "#c0caf5"
+set statusbar-bg "#1a1b26"
+set statusbar-fg "#c0caf5"
+set highlight-color "#e0af68"
+set highlight-active-color "#9ece6a"
+set default-bg "#1a1b26"
+set default-fg "#c0caf5"
+set render-loading true
+set render-loading-fg "#1a1b26"
+set render-loading-bg "#c0caf5"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#1a1b26"
+set recolor-darkcolor "#c0caf5"
 
-set index-fg                    "#c0caf5"
-set index-bg                    "#24283b"
-set index-active-fg             "#414868"
-set index-active-bg             "#24283b"
-
-set statusbar-fg                "#a9b1d6"
-set statusbar-bg                "#24283b"
-
-set inputbar-fg                 "#73daca"
-set inputbar-bg                 "#1a1b26"
-
-set notification-fg             "#a9b1d6"
-set notification-bg             "#24283b"
-
-set notification-error-fg       "#f7768e"
-set notification-error-bg       "#24283b"
-
-set notification-warning-fg     "#24283b"
-set notification-warning-bg     "#1a1b26"
-
-set highlight-color             "#e0af68"
-set highlight-active-color      "#9aa5ce"
-
-set completion-fg               "#a9b1d6"
-set completion-bg               "#24283b"
-
-set completion-highlight-fg     "#a9b1d6"
-set completion-highlight-bg     "#414868"
-set completion-group-fg         "#7aa2f7"
-set completion-group-bg         "#24283b"
-
-set recolor-lightcolor          "#16161e"
-set recolor-darkcolor           "#a9b1d6"
-
-set recolor                     "true"
-set recolor-keephue             "false"
+# # tokyonight
+# set default-fg                  "#a9b1d6"
+# set default-bg                  "#1a1b26"
+#
+# set index-fg                    "#c0caf5"
+# set index-bg                    "#24283b"
+# set index-active-fg             "#414868"
+# set index-active-bg             "#24283b"
+#
+# set statusbar-fg                "#a9b1d6"
+# set statusbar-bg                "#24283b"
+#
+# set inputbar-fg                 "#73daca"
+# set inputbar-bg                 "#1a1b26"
+#
+# set notification-fg             "#a9b1d6"
+# set notification-bg             "#24283b"
+#
+# set notification-error-fg       "#f7768e"
+# set notification-error-bg       "#24283b"
+#
+# set notification-warning-fg     "#24283b"
+# set notification-warning-bg     "#1a1b26"
+#
+# set highlight-color             "#e0af68"
+# set highlight-active-color      "#9aa5ce"
+#
+# set completion-fg               "#a9b1d6"
+# set completion-bg               "#24283b"
+#
+# set completion-highlight-fg     "#a9b1d6"
+# set completion-highlight-bg     "#414868"
+# set completion-group-fg         "#7aa2f7"
+# set completion-group-bg         "#24283b"
+#
+# set recolor-lightcolor          "#16161e"
+# set recolor-darkcolor           "#a9b1d6"
+#
+# set recolor                     "true"
+# set recolor-keephue             "false"
 
 # set default-fg 			"#c0caf5"
 # set default-bg 			"#24283b"

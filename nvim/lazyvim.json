@@ -1,9 +1,12 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.tex",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.gitui"
   ],
   "news": {
-    "NEWS.md": "2123"
+    "NEWS.md": "5204"
   },
-  "version": 2
+  "version": 6
 }
