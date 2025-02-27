@@ -17,11 +17,22 @@ return {
   --       config = {
   --         c = "// %s",
   --         cpp = "// %s",
+  --         cuda = "// %s",
   --       },
   --     },
   --   },
   -- },
-  --
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    opts = {
+      config = {
+        c = "// %s",
+        cpp = "// %s",
+        verilog = "// %s",
+        systemverilog = "// %s",
+      },
+    },
+  },
   -- -- setup mason/dap extensions
   -- {
   --   "williamboman/mason.nvim",

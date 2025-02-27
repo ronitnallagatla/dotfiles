@@ -93,22 +93,22 @@ return {
   },
 
   -- dashboard
-  {
-    "nvimdev/dashboard-nvim",
-    optional = true,
-    opts = function(_)
-      -- show dashboard when new tab page is opened
-      vim.api.nvim_create_autocmd("TabNewEntered", { command = "Dashboard" })
-    end,
-  },
+  -- {
+  --   "nvimdev/dashboard-nvim",
+  --   optional = true,
+  --   opts = function(_)
+  --     -- show dashboard when new tab page is opened
+  --     vim.api.nvim_create_autocmd("TabNewEntered", { command = "Dashboard" })
+  --   end,
+  -- },
 
   -- notify customization
-  {
-    "rcarriga/nvim-notify",
-    opts = {
-      stages = "fade_in_slide_out",
-      timeout = 3000,
-      render = "compact",
-    },
-  },
+  -- {
+  --   "rcarriga/nvim-notify",
+  --   opts = {
+  --     stages = "fade_in_slide_out",
+  --     timeout = 3000,
+  --     render = "compact",
+  --   },
+  -- },
 }

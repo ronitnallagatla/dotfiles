@@ -7,7 +7,7 @@ origin = top-right
 offset = "20x20"
 notification_limit = 4
 shrink = yes
-transparency = 1
+transparency = 0.5
 
 padding = 12
 horizontal_padding = 12
@@ -24,11 +24,11 @@ progress_bar_min_width = 0
 progress_bar_max_width = 300
 progress_bar_frame_width = 0
 
-font = "SF Pro Text 10"
+font = "SF Hello 10"
 icon_theme = WhiteSur-dark
 
 #format = "<span size='x-large' font_desc='SF Pro Text 9' weight='Bold' foreground='#c49ec4'>%s</span>\n%b"
-format = "<span size='x-large' font_desc='SF Pro Text 9' weight='Bold' foreground='#c0caf5'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='SF Hello 9' weight='Bold' foreground='#c0caf5'>%s</span>\n%b"
 alignment = center
 markup = full
 always_run_script = true
@@ -45,7 +45,7 @@ max_icon_size = 128
 
 sticky_history = false
 
-browser = /usr/bin/firefox --new-tab
+browser = $BROWSER --new-tab
 
 mouse_left_click = do_action, close_current
 mouse_middle_click = close_all

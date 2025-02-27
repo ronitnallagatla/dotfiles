@@ -11,6 +11,8 @@ map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
 map D set "first-page-column 1:1"
 map <C-d> set "first-page-column 1:2"
+map <Return> goto
+map s toggle_statusbar
 
 # Open document in fit-width mode by default
 set adjust-open "best-fit"
@@ -27,7 +29,7 @@ set scroll-step 100
 set zoom-min 10
 set guioptions ""
 
-set font "monospace 11"
+set font "sans-serif 11"
 
 set selection-clipboard clipboard
 
@@ -36,39 +38,39 @@ set selection-clipboard clipboard
 #
 # Tokyonight color theme
 #
-set notification-error-bg "#f7768e"
-set notification-error-fg "#c0caf5"
-set notification-warning-bg "#e0af68"
-set notification-warning-fg "#414868"
-set notification-bg "#1a1b26"
-set notification-fg "#c0caf5"
-set completion-bg "#1a1b26"
-set completion-fg "#a9b1d6"
-set completion-group-bg "#1a1b26"
-set completion-group-fg "#a9b1d6"
-set completion-highlight-bg "#414868"
-set completion-highlight-fg "#c0caf5"
-set index-bg "#1a1b26"
-set index-fg "#c0caf5"
-set index-active-bg "#414868"
-set index-active-fg "#c0caf5"
-set inputbar-bg "#1a1b26"
-set inputbar-fg "#c0caf5"
-set statusbar-bg "#1a1b26"
-set statusbar-fg "#c0caf5"
-set highlight-color "#e0af68"
-set highlight-active-color "#9ece6a"
-set default-bg "#1a1b26"
-set default-fg "#c0caf5"
+set notification-error-bg "#ff757f"
+set notification-error-fg "#c8d3f5"
+set notification-warning-bg "#ffc777"
+set notification-warning-fg "#444a73"
+set notification-bg "#222436"
+set notification-fg "#c8d3f5"
+set completion-bg "#222436"
+set completion-fg "#828bb8"
+set completion-group-bg "#222436"
+set completion-group-fg "#828bb8"
+set completion-highlight-bg "#444a73"
+set completion-highlight-fg "#c8d3f5"
+set index-bg "#222436"
+set index-fg "#c8d3f5"
+set index-active-bg "#444a73"
+set index-active-fg "#c8d3f5"
+set inputbar-bg "#222436"
+set inputbar-fg "#c8d3f5"
+set statusbar-bg "#222436"
+set statusbar-fg "#c8d3f5"
+set highlight-color "rgba(255, 199, 119, 0.5)"
+set highlight-active-color "rgba(195, 232, 141, 0.5)"
+set default-bg "#222436"
+set default-fg "#c8d3f5"
 set render-loading true
-set render-loading-fg "#1a1b26"
-set render-loading-bg "#c0caf5"
+set render-loading-fg "#222436"
+set render-loading-bg "#c8d3f5"
 #
 # Recolor mode settings
 # <C-r> to switch modes
 #
-set recolor-lightcolor "#1a1b26"
-set recolor-darkcolor "#c0caf5"
+set recolor-lightcolor "#222436"
+set recolor-darkcolor "#c8d3f5"
 
 # # tokyonight
 # set default-fg                  "#a9b1d6"

@@ -40,6 +40,7 @@ alias catfz="fzf --preview 'bat --color=always --style=numbers --line-range=:500
 alias batfz="catfz"
 alias z="zathura"
 alias open="xdg-open"
+alias todo="bat -p ~/todo.md"
 eval $(thefuck --alias)
 
 # SSH
@@ -47,9 +48,11 @@ if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi
 
-alias eceprog="ssh rnallaga@eceprog.ecn.purdue.edu"
-alias ecnfs="sshfs -o auto_cache,cache=yes,kernel_cache,reconnect,compression=no rnallaga@eceprog.ecn.purdue.edu:/home/shay/a/rnallaga ~/ecnfs && cd  ~/ecnfs"
-alias mg="ssh mg293@ececomp.ecn.purdue.edu"
+# alias eceprog="ssh rnallaga@eceprog.ecn.purdue.edu"
+alias ecnfs="sshfs -o auto_cache,cache=yes,kernel_cache,reconnect,compression=no rnallaga@ececomp.ecn.purdue.edu:/home/shay/a/rnallaga ~/ecnfs && cd  ~/ecnfs"
+# alias mg="ssh mg293@ececomp.ecn.purdue.edu"
 # alias mgfs="sshfs mg252@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg252/ ~/MG && cd ~/MG"
 alias mgfs="sshfs mg393@ececomp.ecn.purdue.edu:/home/ecegrid/a/mg393/ ~/MG -o compression=no,auto_cache,reconnect,follow_symlinks"
-alias socet="ssh socet167@ececomp.ecn.purdue.edu"
+# alias socet="ssh socet167@ececomp.ecn.purdue.edu"
+alias qstruct="sshfs -o auto_cache,cache=yes,kernel_cache,reconnect,compression=no qstruct:/home/min/a/rnallaga ~/ecnfs"
+alias gpufs="sshfs -o auto_cache,cache=yes,kernel_cache,reconnect,compression=no gpu:/home/rnallaga ~/ecnfs"
