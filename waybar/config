@@ -10,7 +10,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "backlight", "battery", "clock"],
     "hyprland/workspaces": {
-      "format": "{name}",
+      "format": "{name}{windows}",
       "on-click": "activate",
       "on-scroll-up": "hyprctl dispatch workspace e+1",
       "on-scroll-down": "hyprctl dispatch workspace e-1",
@@ -31,7 +31,12 @@
         // "default": ""
       },
       */
-      "sort-by-number": true
+      "sort-by-number": true,
+      "window-rewrite-default": "",
+      "window-rewrite": {
+        "WebCord": "\t",
+        "Spotify": "\t"
+      }
     },
     "hyprland/window": {
         "format": "{}",
