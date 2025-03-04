@@ -10,11 +10,11 @@
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "pulseaudio", "network", "backlight", "battery", "clock"],
     "hyprland/workspaces": {
-      "format": "{name}{windows}",
+      "format": "{icon}{windows}",
+      "show-special": true,
       "on-click": "activate",
       "on-scroll-up": "hyprctl dispatch workspace e+1",
       "on-scroll-down": "hyprctl dispatch workspace e-1",
-      /*
       "format-icons": {
         "1": "1",
         "2": "2",
@@ -25,12 +25,12 @@
         "7": "7",
         "8": "8",
         "9": "9",
-        "10": "10"
+        "10": "10",
         // "urgent": "",
         // "active": "",
         // "default": ""
+        "special:special": "S"
       },
-      */
       "sort-by-number": true,
       "window-rewrite-default": "",
       "window-rewrite": {

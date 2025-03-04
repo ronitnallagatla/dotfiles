@@ -1,6 +1,6 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: 'SF Hello', 'Symbols Nerd Font';
+  font-family: 'SF Hello', 'Symbols Nerd Font', 'sans-serif';
   font-size: 13px;
   border: none;
   padding: 0;
@@ -61,7 +61,15 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
+  color: #ffffff;
+  border-radius: 10px;
   background-color: #eb4d4b;
+}
+
+#workspaces button.special {
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #ff5f1f;
 }
 
 /* #mode { */
